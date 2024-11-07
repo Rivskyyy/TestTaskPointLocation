@@ -1,13 +1,13 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace TestTaskPointLocation
 {
-    internal class PointLocationCalculatorService
+    public class PointLocationCalculatorService
     {
-        public bool CheckPointLocation(int squareSide, Point x1, Point y1, Point x2, Point y2)
+        public bool CheckPointLocation(int squareSide, Point topLeft, Point point)
         {
-            if (x2.X >= x1.X && x2.X <= x1.X + squareSide && y2.Y >= y1.Y - squareSide && y2.Y <= y1.Y)
+            if (point.X >= topLeft.X && point.X <= topLeft.X + squareSide 
+                && point.Y >= topLeft.Y - squareSide && point.Y <= topLeft.Y)
                 return true;
             else
                 return false;

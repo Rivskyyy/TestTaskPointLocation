@@ -4,7 +4,7 @@ using System.Drawing;
 
 namespace TestTaskPointLocation
 {
-    internal class SquareDataReaderService
+    public class SquareDataReaderService
     {
         public int ReadSquareLength()
         {

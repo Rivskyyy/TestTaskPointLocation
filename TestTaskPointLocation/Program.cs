@@ -14,8 +14,7 @@ namespace TestTaskPointLocation
             var squarePoint = squareDataService.ReadTopLeftCornerPoint();
             var pointLocation = squareDataService.ReadBottomRightCornerPoint();
 
-            bool isInside = pointLocationService.CheckPointLocation(squareLength, squarePoint, squarePoint,
-                 pointLocation, pointLocation);
+            bool isInside = pointLocationService.CheckPointLocation(squareLength, squarePoint,pointLocation);
 
             if (isInside)
                 Console.WriteLine("\n The point is inside the square.");
