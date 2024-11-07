@@ -3,7 +3,7 @@
 This project determines whether a given point lies inside or outside a square based on the square's side length and top-left coordinates.
 
 ## Features:
-- Input square's side length and top-left corner coordinates.
+- Input square's side length and top-left coordinates.
 - Input coordinates of a point.
 - Check if the point is inside or outside the square.
 
